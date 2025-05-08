@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #71bacc; 
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130vh;
+  padding: 20px;
+  font-size: 20px;
+}
+
+
+.App {
+  width: 100%;
+  max-width: 500px; 
+  background-color: #288ca5;
+  padding: 35px 30px;
+  border-radius: 15px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  border: 1px solid #ffffff; 
+  margin: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.App:hover {
+  transform: scale(1.02); 
+}
+
+
+h1 {
+  font-size: 30px;
+  color: #222;
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center; 
+}
+
+
+.todo-input {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  background-color: #fafafa;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.todo-input:focus {
+  border-color: #4CAF50; 
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.2); 
+}
+
+
+.add-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 25px;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+
+.todo-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  margin-bottom: 12px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #ffffff; 
+}
+
+input[type="checkbox"] {
+  margin-right: 18px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.delete-btn:hover {
+  color: #ff1a1a;
+}
+
+
+li.completed {
+  text-decoration: line-through;
+  color: #b8b2b2; 
+}
+
+
+@media (max-width: 500px) {
+  .App {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .todo-input {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .add-btn {
+    padding: 14px 25px;
+  }
+}
