@@ -11,6 +11,5 @@ Backend:
 - Node.js
 - Express.js
 - MongoDB (via Mongoose)
-- CORS
 - dotenv
 
